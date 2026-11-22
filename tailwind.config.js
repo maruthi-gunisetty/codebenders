@@ -1,0 +1,46 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        background: "#F8FAFC",
+        surface: "#FFFFFF",
+        "surface-container": "#FFFFFF",
+        "surface-container-low": "#F1F5F9",
+        "surface-container-high": "#E2E8F0",
+        "surface-container-highest": "#CBD5E1",
+        "on-surface": "#0F172A",
+        "on-surface-variant": "#64748B",
+        primary: "#2563EB",
+        "primary-hover": "#1D4ED8",
+        "primary-container": "#EFF6FF",
+        "on-primary-container": "#1E40AF",
+        secondary: "#059669",
+        "secondary-container": "#ECFDF5",
+        "on-secondary-container": "#047857",
+        tertiary: "#D97706",
+        "tertiary-container": "#FFFBEB",
+        "on-tertiary-container": "#B45309",
+        error: "#DC2626",
+        "error-container": "#FEF2F2",
+        "on-error-container": "#B91C1C",
+        outline: "#94A3B8",
+        "outline-variant": "#E2E8F0",
+      },
+      fontFamily: {
+        sans: ["'Plus Jakarta Sans'", "'Inter'", "system-ui", "sans-serif"],
+        headline: ["'Plus Jakarta Sans'", "sans-serif"],
+        body: ["'Inter'", "sans-serif"],
+        mono: ["'JetBrains Mono'", "monospace"],
+      },
+      boxShadow: {
+        card: "0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.02)",
+        "card-hover": "0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.04)",
+        panel: "0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03)",
+        xs: "0 1px 2px rgba(15, 23, 42, 0.05)",
+      },
+    },
+  },
+  plugins: [],
+};
